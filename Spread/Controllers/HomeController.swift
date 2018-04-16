@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeController: BaseController {
+class HomeController: EventsController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +16,15 @@ class HomeController: BaseController {
         
         self.title = "Home"
         
-        //show NavigationBar
-        if let navController = self.navigationController {
-            navController.setNavigationBarHidden(false, animated: true)
-        }
-        
         let label = UILabel()
-        label.text = "Home"
+        label.text = self.title
         label.font = UIFont(name: label.font.fontName, size: 30)
         label.textAlignment = .center
-        canvas.addSubview(label)
+        self.canvas.addSubview(label)
         label.snp.makeConstraints { (make) in
             make.width.equalToSuperview().multipliedBy(0.8)
             make.height.equalTo(100)
-            make.center.equalTo(canvas)
+            make.center.equalTo(self.canvas)
         }
         
     }
