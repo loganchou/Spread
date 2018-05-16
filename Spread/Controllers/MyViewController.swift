@@ -1,5 +1,5 @@
 //
-//  SearchController.swift
+//  PersonalController.swift
 //  Spread
 //
 //  Created by logan on 2018/04/15.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class SearchController: BaseController {
+class MyViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.title = "Search"
+        self.title = "Personal"
         
         
     }

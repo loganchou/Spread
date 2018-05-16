@@ -1,5 +1,5 @@
 //
-//  BaseController.swift
+//  BaseViewController.swift
 //  Train
 //
 //  Created by logan on 2018/04/08.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseController: UIViewController {
+class BaseViewController: UIViewController {
     let canvas = UIView()
     var spinner = UIView()
     var activityIndicator = UIActivityIndicatorView()

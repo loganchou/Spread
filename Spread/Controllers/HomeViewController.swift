@@ -1,21 +1,22 @@
 //
-//  PersonalController.swift
-//  Spread
+//  HomeViewController.swift
+//  Train
 //
-//  Created by logan on 2018/04/15.
+//  Created by logan on 2018/04/09.
 //  Copyright © 2018年 logan. All rights reserved.
 //
 
 import UIKit
 
-class MyController: BaseController {
-    
+class HomeViewController: EventsViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.title = "Personal"
+        self.title = "Home"
         
+
         
     }
 }

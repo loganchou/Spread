@@ -1,26 +1,25 @@
 //
-//  RegisterController.swift
+//  LoginViewController.swift
 //  Train
 //
-//  Created by logan on 2018/04/12.
+//  Created by logan on 2018/04/09.
 //  Copyright © 2018年 logan. All rights reserved.
 //
 
 import UIKit
 
-class RegisterController: BaseController, UITextFieldDelegate {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
+
     var userId: UITextField!    //user id
     var password: UITextField!  //password
-    var repeatPwd: UITextField!  //repeat password
-    var signup: UIButton!       //sign in
-    var back: UIButton!       //sign up
+    var signin: UIButton!       //sign in
+    var signup: UIButton!       //sign up
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        self.title = "Sign Up"
+        self.title="Log In"
         
         //Hidden NavigationBar
         if let navController = self.navigationController {
@@ -28,10 +27,10 @@ class RegisterController: BaseController, UITextFieldDelegate {
         }
         
         let top = (self.view.frame.size.height - 380) / 2
-        
+
         //title
         let title = UILabel()
-        title.text = "Sign Up"
+        title.text = "Spread"
         title.textColor = UIColor.black
         title.font = UIFont.systemFont(ofSize: 30)
         canvas.addSubview(title)
@@ -70,40 +69,25 @@ class RegisterController: BaseController, UITextFieldDelegate {
             make.height.equalTo(44)
             make.top.equalTo(self.userId.snp.bottom).offset(20)
         }
-        
-        //repeat password text field
-        self.repeatPwd = UITextField()
-        self.repeatPwd.delegate = self
-        self.repeatPwd.placeholder = "Repeat Password"
-        self.repeatPwd.tag = 102
-        self.repeatPwd.borderStyle = UITextBorderStyle.roundedRect
-        self.repeatPwd.returnKeyType = UIReturnKeyType.next
-        canvas.addSubview(self.repeatPwd)
-        self.repeatPwd.snp.makeConstraints { (make) -> Void in
+
+        //signin button
+        self.signin = UIButton()
+        self.signin.setTitle("Log In", for: UIControlState())
+        self.signin.setTitleColor(UIColor.white, for: UIControlState())
+        self.signin.layer.cornerRadius = 5
+        self.signin.backgroundColor = ColorUtil.AppRGBA(red: 44, green: 99, blue: 210)
+        self.signin.addTarget(self, action: #selector(signinClick), for: .touchUpInside)
+        canvas.addSubview(self.signin)
+        self.signin.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(15)
             make.right.equalTo(-15)
             make.height.equalTo(44)
             make.top.equalTo(self.password.snp.bottom).offset(20)
         }
         
-        //signin button
-        self.signup = UIButton()
-        self.signup.setTitle("Sign Up", for: UIControlState())
-        self.signup.setTitleColor(UIColor.white, for: UIControlState())
-        self.signup.layer.cornerRadius = 5
-        self.signup.backgroundColor = ColorUtil.AppRGBA(red: 44, green: 99, blue: 210)
-        self.signup.addTarget(self, action: #selector(signupClick), for: .touchUpInside)
-        canvas.addSubview(self.signup)
-        self.signup.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(15)
-            make.right.equalTo(-15)
-            make.height.equalTo(44)
-            make.top.equalTo(self.repeatPwd.snp.bottom).offset(20)
-        }
-        
-        //back to log in
+        //Sign Up Policy
         let statement = UILabel()
-        statement.text = "Already have an account?"
+        statement.text = "By clicking Create Account, you agree to our Terms and that you have read our Data Policy. You may receive Mail Notifications from Train."
         statement.textColor = UIColor.black
         statement.font = UIFont.systemFont(ofSize: 10)
         statement.lineBreakMode = .byWordWrapping
@@ -117,18 +101,18 @@ class RegisterController: BaseController, UITextFieldDelegate {
         statement.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(20)
             make.right.equalTo(-20)
-            make.top.equalTo(signup.snp.bottom).offset(30)
+            make.top.equalTo(signin.snp.bottom).offset(30)
         }
         
-        //Back button
-        self.back = UIButton()
-        self.back.setTitle("Back To Log In", for: UIControlState())
-        self.back.setTitleColor(UIColor.white, for: UIControlState())
-        self.back.layer.cornerRadius = 5
-        self.back.backgroundColor = ColorUtil.AppRGBA(red: 44, green: 99, blue: 210)
-        self.back.addTarget(self, action: #selector(backClick), for: .touchUpInside)
-        canvas.addSubview(self.back)
-        self.back.snp.makeConstraints { (make) -> Void in
+        //Sign Up button
+        self.signup = UIButton()
+        self.signup.setTitle("Create Account", for: UIControlState())
+        self.signup.setTitleColor(UIColor.white, for: UIControlState())
+        self.signup.layer.cornerRadius = 5
+        self.signup.backgroundColor = ColorUtil.AppRGBA(red: 44, green: 99, blue: 210)
+        self.signup.addTarget(self, action: #selector(signupClick), for: .touchUpInside)
+        canvas.addSubview(self.signup)
+        self.signup.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(15)
             make.right.equalTo(-15)
             make.height.equalTo(44)
@@ -136,37 +120,23 @@ class RegisterController: BaseController, UITextFieldDelegate {
         }
     }
     
-    @objc private func signupClick(sender: UIButton) {
+    @objc private func signinClick(sender: UIButton) {
         self.displaySpinner(ownView: canvas)
         
+        // サブスレッド(バックグラウンド)で実行する方を書く
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
             self.removeSpinner()
-
-            // define alert
-            let alert = UIAlertController(
-                title: "You have successfully registered and logged in.",
-                message: nil,
-                preferredStyle: .alert)
-            
-            // show alert
-            self.present(alert, animated: true, completion: nil)
-        
-            // close alert after tow seconds
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
-                self.presentedViewController?.dismiss(animated: false, completion: nil)
-                if let navController = self.navigationController {
-                    navController.viewControllers.removeAll()
-                    navController.pushViewController(BaseTabBarController(), animated: true)
-                }
+            if let navController = self.navigationController {
+                navController.viewControllers.removeAll()
+                navController.pushViewController(BaseTabBarController(), animated: true)
             }
-            
         })
     }
     
-    @objc private func backClick(sender: UIButton) {
+    @objc private func signupClick(sender: UIButton) {
         if let navController = self.navigationController {
-            navController.popViewController(animated: true)
+            navController.pushViewController(RegisterController(), animated: true)
         }
     }
-
 }
+

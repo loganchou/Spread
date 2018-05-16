@@ -1,5 +1,5 @@
 //
-//  EventsController.swift
+//  EventsViewController.swift
 //  Train
 //
 //  Created by logan on 2018/04/09.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsController: BaseController {
+class EventsViewController: BaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,7 @@ class EventsController: BaseController {
         if let navController = self.navigationController {
             navController.setNavigationBarHidden(false, animated: true)
         }
+        
         
     }
 }
