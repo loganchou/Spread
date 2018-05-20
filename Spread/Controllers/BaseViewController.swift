@@ -37,6 +37,7 @@ class BaseViewController: UIViewController {
         self.spinner.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
         self.spinner.clipsToBounds = true
         self.spinner.layer.cornerRadius = 10
+        self.spinner.layer.zPosition = 1
         
         self.activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         self.activityIndicator.activityIndicatorViewStyle = .whiteLarge
@@ -55,6 +56,7 @@ class BaseViewController: UIViewController {
     func removeSpinner() {
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
+            self.activityIndicator.removeFromSuperview()
             self.spinner.removeFromSuperview()
         }
     }

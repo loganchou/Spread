@@ -34,8 +34,7 @@ class EventTableViewCell: UITableViewCell {
                 self.profilePhoto.image = self.getImageWithDefault(event.profilePhoto)
                 self.publishTime.text = event.publishTime
                 if let image = self.getImageWithDefault(event.eventImage) {
-//                    self.eventImage.image = fitToScreenWidth(image)
-                    self.eventImage.image = image
+                    self.eventImage.image = fitToScreenWidth(image)
                 }
                 
                 self.desc.text = event.desc
