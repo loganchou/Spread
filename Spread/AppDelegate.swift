@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = BaseNavigationController(rootViewController: SplashController())
+        window!.rootViewController = BaseNavigationController(rootViewController: SplashViewController())
         window!.makeKeyAndVisible()
         
         return true

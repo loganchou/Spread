@@ -33,7 +33,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         title.text = "Spread"
         title.textColor = UIColor.black
         title.font = UIFont.systemFont(ofSize: 30)
-        canvas.addSubview(title)
+        self.canvas.addSubview(title)
         title.snp.makeConstraints { (make) -> Void in
             make.centerX.equalTo(canvas)
             make.height.equalTo(34)
@@ -47,7 +47,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         self.userId.tag = 100
         self.userId.borderStyle = UITextBorderStyle.roundedRect
         self.userId.returnKeyType = UIReturnKeyType.next
-        canvas.addSubview(self.userId)
+        self.canvas.addSubview(self.userId)
         self.userId.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(15)
             make.right.equalTo(-15)
@@ -62,7 +62,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         self.password.tag = 101
         self.password.borderStyle = UITextBorderStyle.roundedRect
         self.password.returnKeyType = UIReturnKeyType.next
-        canvas.addSubview(self.password)
+        self.canvas.addSubview(self.password)
         self.password.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(15)
             make.right.equalTo(-15)
@@ -135,7 +135,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     @objc private func signupClick(sender: UIButton) {
         if let navController = self.navigationController {
-            navController.pushViewController(RegisterController(), animated: true)
+            navController.pushViewController(RegisterViewController(), animated: true)
         }
     }
 }

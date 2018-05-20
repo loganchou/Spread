@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SplashViewController: BaseController {
+class SplashViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +38,10 @@ class SplashViewController: BaseController {
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
                 // Main Threadで実行する
                 guard let authToken = AppConfig.appConfig.authToken, authToken.count > 0 else {
-                    self.navigationController?.pushViewController(LoginController(), animated: true)
+                    self.navigationController?.pushViewController(LoginViewController(), animated: true)
                     return
                 }
-                self.navigationController?.pushViewController(HomeController(), animated: true)
+                self.navigationController?.pushViewController(HomeViewController(), animated: true)
             })
         }
     }

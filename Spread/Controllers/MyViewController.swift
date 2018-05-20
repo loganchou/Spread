@@ -1,5 +1,5 @@
 //
-//  PersonalController.swift
+//  MyViewController.swift
 //  Spread
 //
 //  Created by logan on 2018/04/15.

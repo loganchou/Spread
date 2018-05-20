@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02091297207B8ABE00EA4729 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091295207B8ABE00EA4729 /* BaseController.swift */; };
+		02091297207B8ABE00EA4729 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091295207B8ABE00EA4729 /* BaseViewController.swift */; };
 		02091298207B8ABE00EA4729 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091296207B8ABE00EA4729 /* BaseNavigationController.swift */; };
-		0209129A207B8CAD00EA4729 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091299207B8CAD00EA4729 /* SplashController.swift */; };
-		0209129F207BA17000EA4729 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209129E207BA17000EA4729 /* HomeController.swift */; };
-		020912A1207BA1FD00EA4729 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020912A0207BA1FD00EA4729 /* LoginController.swift */; };
+		0209129A207B8CAD00EA4729 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02091299207B8CAD00EA4729 /* SplashViewController.swift */; };
+		0209129F207BA17000EA4729 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0209129E207BA17000EA4729 /* HomeViewController.swift */; };
+		020912A1207BA1FD00EA4729 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020912A0207BA1FD00EA4729 /* LoginViewController.swift */; };
 		020912A3207BA3EC00EA4729 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020912A2207BA3EC00EA4729 /* ColorUtil.swift */; };
 		020912A7207BA76300EA4729 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020912A6207BA76300EA4729 /* AppConfig.swift */; };
 		023952E4207A40F700E7C116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023952E3207A40F700E7C116 /* AppDelegate.swift */; };
@@ -52,20 +52,22 @@
 		02395341207A4D4C00E7C116 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0239531E207A4D4C00E7C116 /* Info.plist */; };
 		02395342207A4D4C00E7C116 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0239531F207A4D4C00E7C116 /* ConstraintRelatableTarget.swift */; };
 		025499302082E74000C95819 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254992F2082E74000C95819 /* BaseTabBarController.swift */; };
-		025499322082EDA100C95819 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499312082EDA100C95819 /* FavoriteController.swift */; };
-		025499342082EDF100C95819 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499332082EDF100C95819 /* SearchController.swift */; };
-		025499362082F1AB00C95819 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499352082F1AB00C95819 /* MyController.swift */; };
-		0254993820830F0800C95819 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254993720830F0800C95819 /* EventsController.swift */; };
-		027212402081CFD600D2E6AF /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272123F2081CFD600D2E6AF /* UIUtil.swift */; };
-		02F5690C207FA7590012608E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5690B207FA7590012608E /* RegisterController.swift */; };
+		025499322082EDA100C95819 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499312082EDA100C95819 /* FavoriteViewController.swift */; };
+		025499342082EDF100C95819 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499332082EDF100C95819 /* SearchViewController.swift */; };
+		025499362082F1AB00C95819 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025499352082F1AB00C95819 /* MyViewController.swift */; };
+		0254993820830F0800C95819 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254993720830F0800C95819 /* EventsViewController.swift */; };
+		027212402081CFD600D2E6AF /* UiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272123F2081CFD600D2E6AF /* UiUtil.swift */; };
+		028935F42088CF1D00831CB4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028935F32088CF1D00831CB4 /* Event.swift */; };
+		028935F62088D75E00831CB4 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028935F52088D75E00831CB4 /* EventTableViewCell.swift */; };
+		02F5690C207FA7590012608E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5690B207FA7590012608E /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02091295207B8ABE00EA4729 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		02091295207B8ABE00EA4729 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		02091296207B8ABE00EA4729 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		02091299207B8CAD00EA4729 /* SplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
-		0209129E207BA17000EA4729 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		020912A0207BA1FD00EA4729 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		02091299207B8CAD00EA4729 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0209129E207BA17000EA4729 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		020912A0207BA1FD00EA4729 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		020912A2207BA3EC00EA4729 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		020912A6207BA76300EA4729 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		023952E0207A40F700E7C116 /* Spread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spread.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,12 +111,14 @@
 		0239531E207A4D4C00E7C116 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0239531F207A4D4C00E7C116 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		0254992F2082E74000C95819 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
-		025499312082EDA100C95819 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
-		025499332082EDF100C95819 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
-		025499352082F1AB00C95819 /* MyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
-		0254993720830F0800C95819 /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
-		0272123F2081CFD600D2E6AF /* UIUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
-		02F5690B207FA7590012608E /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		025499312082EDA100C95819 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		025499332082EDF100C95819 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		025499352082F1AB00C95819 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		0254993720830F0800C95819 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		0272123F2081CFD600D2E6AF /* UiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUtil.swift; sourceTree = "<group>"; };
+		028935F32088CF1D00831CB4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		028935F52088D75E00831CB4 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		02F5690B207FA7590012608E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,17 +166,17 @@
 		023952F5207A416900E7C116 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0254993720830F0800C95819 /* EventsController.swift */,
-				02091299207B8CAD00EA4729 /* SplashController.swift */,
-				02091295207B8ABE00EA4729 /* BaseController.swift */,
+				0254993720830F0800C95819 /* EventsViewController.swift */,
+				02091299207B8CAD00EA4729 /* SplashViewController.swift */,
+				02091295207B8ABE00EA4729 /* BaseViewController.swift */,
 				02091296207B8ABE00EA4729 /* BaseNavigationController.swift */,
-				0209129E207BA17000EA4729 /* HomeController.swift */,
-				020912A0207BA1FD00EA4729 /* LoginController.swift */,
-				02F5690B207FA7590012608E /* RegisterController.swift */,
+				0209129E207BA17000EA4729 /* HomeViewController.swift */,
+				020912A0207BA1FD00EA4729 /* LoginViewController.swift */,
+				02F5690B207FA7590012608E /* RegisterViewController.swift */,
 				0254992F2082E74000C95819 /* BaseTabBarController.swift */,
-				025499312082EDA100C95819 /* FavoriteController.swift */,
-				025499332082EDF100C95819 /* SearchController.swift */,
-				025499352082F1AB00C95819 /* MyController.swift */,
+				025499312082EDA100C95819 /* FavoriteViewController.swift */,
+				025499332082EDF100C95819 /* SearchViewController.swift */,
+				025499352082F1AB00C95819 /* MyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 		023952F7207A425700E7C116 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				028935F32088CF1D00831CB4 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 		023952F8207A448300E7C116 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				028935F52088D75E00831CB4 /* EventTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,7 +210,7 @@
 			children = (
 				020912A2207BA3EC00EA4729 /* ColorUtil.swift */,
 				020912A6207BA76300EA4729 /* AppConfig.swift */,
-				0272123F2081CFD600D2E6AF /* UIUtil.swift */,
+				0272123F2081CFD600D2E6AF /* UiUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -324,34 +330,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				02395323207A4D4C00E7C116 /* ConstraintInsets.swift in Sources */,
-				02F5690C207FA7590012608E /* RegisterController.swift in Sources */,
+				02F5690C207FA7590012608E /* RegisterViewController.swift in Sources */,
 				025499302082E74000C95819 /* BaseTabBarController.swift in Sources */,
 				02395321207A4D4C00E7C116 /* Typealiases.swift in Sources */,
 				0239532E207A4D4C00E7C116 /* ConstraintRelation.swift in Sources */,
-				0254993820830F0800C95819 /* EventsController.swift in Sources */,
+				0254993820830F0800C95819 /* EventsViewController.swift in Sources */,
 				02395336207A4D4C00E7C116 /* ConstraintLayoutSupport.swift in Sources */,
 				020912A7207BA76300EA4729 /* AppConfig.swift in Sources */,
-				0209129A207B8CAD00EA4729 /* SplashController.swift in Sources */,
+				0209129A207B8CAD00EA4729 /* SplashViewController.swift in Sources */,
 				02395324207A4D4C00E7C116 /* ConstraintAttributes.swift in Sources */,
-				025499342082EDF100C95819 /* SearchController.swift in Sources */,
+				025499342082EDF100C95819 /* SearchViewController.swift in Sources */,
 				02395331207A4D4C00E7C116 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				02091298207B8ABE00EA4729 /* BaseNavigationController.swift in Sources */,
 				020912A3207BA3EC00EA4729 /* ColorUtil.swift in Sources */,
 				02395340207A4D4C00E7C116 /* ConstraintViewDSL.swift in Sources */,
 				0239532A207A4D4C00E7C116 /* ConstraintConfig.swift in Sources */,
 				0239533C207A4D4C00E7C116 /* LayoutConstraint.swift in Sources */,
-				0209129F207BA17000EA4729 /* HomeController.swift in Sources */,
+				0209129F207BA17000EA4729 /* HomeViewController.swift in Sources */,
 				02395328207A4D4C00E7C116 /* ConstraintMakerPriortizable.swift in Sources */,
 				02395338207A4D4C00E7C116 /* UILayoutSupport+Extensions.swift in Sources */,
 				02395332207A4D4C00E7C116 /* ConstraintPriority.swift in Sources */,
-				02091297207B8ABE00EA4729 /* BaseController.swift in Sources */,
-				027212402081CFD600D2E6AF /* UIUtil.swift in Sources */,
+				02091297207B8ABE00EA4729 /* BaseViewController.swift in Sources */,
+				027212402081CFD600D2E6AF /* UiUtil.swift in Sources */,
 				02395329207A4D4C00E7C116 /* ConstraintView+Extensions.swift in Sources */,
+				028935F42088CF1D00831CB4 /* Event.swift in Sources */,
 				02395335207A4D4C00E7C116 /* ConstraintMakerFinalizable.swift in Sources */,
 				0239532D207A4D4C00E7C116 /* ConstraintPriorityTarget.swift in Sources */,
 				02395322207A4D4C00E7C116 /* ConstraintMakerRelatable.swift in Sources */,
 				0239532F207A4D4C00E7C116 /* Debugging.swift in Sources */,
-				025499362082F1AB00C95819 /* MyController.swift in Sources */,
+				025499362082F1AB00C95819 /* MyViewController.swift in Sources */,
 				02395337207A4D4C00E7C116 /* ConstraintMakerEditable.swift in Sources */,
 				02395330207A4D4C00E7C116 /* ConstraintDescription.swift in Sources */,
 				0239533B207A4D4C00E7C116 /* Constraint.swift in Sources */,
@@ -359,14 +366,15 @@
 				02395333207A4D4C00E7C116 /* ConstraintMaker.swift in Sources */,
 				0239533D207A4D4C00E7C116 /* ConstraintDSL.swift in Sources */,
 				02395334207A4D4C00E7C116 /* ConstraintConstantTarget.swift in Sources */,
-				025499322082EDA100C95819 /* FavoriteController.swift in Sources */,
-				020912A1207BA1FD00EA4729 /* LoginController.swift in Sources */,
+				025499322082EDA100C95819 /* FavoriteViewController.swift in Sources */,
+				020912A1207BA1FD00EA4729 /* LoginViewController.swift in Sources */,
 				0239533F207A4D4C00E7C116 /* ConstraintMultiplierTarget.swift in Sources */,
 				02395320207A4D4C00E7C116 /* LayoutConstraintItem.swift in Sources */,
 				0239532C207A4D4C00E7C116 /* ConstraintOffsetTarget.swift in Sources */,
 				02395325207A4D4C00E7C116 /* ConstraintView.swift in Sources */,
 				02395326207A4D4C00E7C116 /* ConstraintMakerExtendable.swift in Sources */,
 				02395339207A4D4C00E7C116 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				028935F62088D75E00831CB4 /* EventTableViewCell.swift in Sources */,
 				02395327207A4D4C00E7C116 /* ConstraintInsetTarget.swift in Sources */,
 				0239532B207A4D4C00E7C116 /* ConstraintLayoutGuide.swift in Sources */,
 				0239533E207A4D4C00E7C116 /* ConstraintLayoutGuide+Extensions.swift in Sources */,

@@ -14,22 +14,22 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let home = HomeController()
+        let home = HomeViewController()
         let homeTabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home-filled"))
         homeTabBarItem.tag = 0
         home.tabBarItem = homeTabBarItem
         
-        let search = SearchController()
+        let search = SearchViewController()
         let searchTabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "search"), selectedImage: UIImage(named: "search-filled"))
         searchTabBarItem.tag = 1
         search.tabBarItem = searchTabBarItem
         
-        let favorite = FavoriteController()
+        let favorite = FavoriteViewController()
         let favoriteTabBarItem = UITabBarItem(title: "Favorite", image: UIImage(named: "heart"), selectedImage: UIImage(named: "heart-filled"))
         favoriteTabBarItem.tag = 2
         favorite.tabBarItem = favoriteTabBarItem
 
-        let my = MyController()
+        let my = MyViewController()
         let myTabBarItem = UITabBarItem(title: "Personal", image: UIImage(named: "user"), selectedImage: UIImage(named: "user-filled"))
         myTabBarItem.tag = 3
         my.tabBarItem = myTabBarItem
